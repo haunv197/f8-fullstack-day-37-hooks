@@ -1,6 +1,7 @@
 import paths from "./configs/paths";
 import DefaultLayout from "./layouts/DefaultLayout";
 import EditAvatar from "./pages/EditAvatar";
+import ReactMemo from "./pages/ReactMemo";
 import UseRef from "./pages/UseRef";
 
 const routes = [
@@ -9,6 +10,7 @@ const routes = [
     children: [
       { path: paths.editAvatar, component: EditAvatar },
       { path: paths.useRef, component: UseRef },
+      { path: paths.reactMemo, component: ReactMemo },
     ],
   },
 ];
