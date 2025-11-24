@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import placeholderAvatar from "@/assets/images/placeholder-avatar.png";
 
 const styles = {
   avatar: {
@@ -12,7 +13,6 @@ const styles = {
 
 function EditAvatar() {
   const [avatarUrl, setAvatarUrl] = useState();
-  const avatarUrlDefault = "/src/assets/images/placeholder-avatar.png";
 
   const handleChangeAvatar = (e) => {
     const file = e.target.files[0];
@@ -47,7 +47,7 @@ function EditAvatar() {
         />
         <img
           style={styles.avatar}
-          src={avatarUrl || avatarUrlDefault}
+          src={avatarUrl || placeholderAvatar}
           alt="Avatar"
         />
         <span>Click để chọn ảnh</span>
